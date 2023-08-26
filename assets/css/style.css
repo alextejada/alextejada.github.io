@@ -1,0 +1,346 @@
+/*--------------------------------------------------------------
+# Config
+--------------------------------------------------------------*/
+:root {
+    scroll-behavior: smooth;
+    --purple-color: #180b27;
+    --purple-color-transparent: #180b27c5;
+    --orange-color: #ffb30b;
+}
+
+@font-face {
+    font-family: 'CANDARA';
+    src: url('../fonts/CANDARA.TTF');
+}
+
+@font-face {
+    font-family: 'IMPACT';
+    src: url('../fonts/IMPACT.TTF');
+}
+
+@font-face {
+    font-family: 'RANYBOLD';
+    src: url('../fonts/RANYBOLD.OTF');
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    font-family: "CANDARA", sans-serif;
+    color: #ffffff;
+    background-color: var(--purple-color);
+    overflow-x: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    max-width: 1920px;
+    margin: auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.header {
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 15px 0;
+    background: var(--purple-color-transparent);
+    max-width: 1920px;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.header .container-fluid {
+    max-width: calc(calc(100vw / 1920) * 1800);
+}
+
+.header.header-scrolled {
+    background: var(--purple-color);
+    padding: 15px 0;
+    box-shadow: 0 2px 20px rgba(1, 41, 112, 0.1);
+}
+
+.header .logo {
+    line-height: 0;
+}
+
+.header .logo img {
+    max-height: 40px;
+    margin-right: 6px;
+}
+
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation
+*/
+.navbar,
+.navRight {
+    padding: 0;
+}
+
+.navRight {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul,
+.navRight ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar li,
+.navRight li {
+    position: relative;
+}
+
+.navbar li > a.active,
+.navbar li:hover,
+.navRight li:hover {
+    background: url(../img/hover-nav.png) center center no-repeat;
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+
+.navRight li.sign-up {
+    background: url(../img/sign-up.png) center center no-repeat;
+    background-size: cover;
+}
+
+.navRight li.sign-up:hover {
+    background: url(../img/sign-up-hover.png) center center no-repeat;
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+
+.navbar a,
+.navRight a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px 10px 50px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+/**
+* Mobile Navigation
+*/
+.mobile-nav-toggle {
+    color: #012970;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    line-height: 0;
+    transition: 0.5s;
+}
+
+.mobile-nav-toggle.bi-x {
+    color: #fff;
+}
+
+@media (max-width: 1200px) {
+    .mobile-nav-toggle {
+        display: block;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+}
+
+.navbar-mobile {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(1, 22, 61, 0.9);
+    transition: 0.3s;
+}
+
+.navbar-mobile .mobile-nav-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.navbar-mobile ul {
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px 0;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: 0.3s;
+}
+
+.navbar-mobile a,
+.navbar-mobile a:focus {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #012970;
+}
+
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover > a {
+    color: #4154f1;
+}
+
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
+    margin: 15px;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+    background: url(../img/Background-Banner.png) top center no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    height: calc(calc(100vw / 1920) * 825);
+    max-height: 825px;
+    margin: auto;
+    max-width: 1920px;
+    position: relative;
+}
+
+.hero .separator {
+    position: absolute;
+    bottom: 0;
+    background: url(../img/separator-banner.png) top center no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 1920px;
+    height: calc(calc(100vw / 1920) * 8);
+    max-height: 8px;
+}
+
+.hero .character {
+    position: absolute;
+    bottom: 0;
+    background: url(../img/TIPA.png) top center no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 1920px;
+    height: calc(calc(100vw / 1920) * 825);
+    max-height: 825px;
+}
+
+/*--------------------------------------------------------------
+# Index Page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.thrilling {
+    background: url(../img/panel1/Background_Juegos_Derecho.png) top left no-repeat,
+    url(../img/panel1/Background_Juegos_Izquierdo.png) top right no-repeat,
+    url(../img/panel1/Resplandor.png) bottom center no-repeat;
+    background-size: initial;
+    overflow-x: hidden;
+    height: calc(calc(100vw / 1920) * 1200);
+    max-height: 1200px;
+    margin: auto;
+    max-width: 1920px;
+    position: relative;
+}
+
+.thrilling .container {
+    max-width: calc(calc(100vw / 1920) * 1800);
+}
+
+.thrilling header {
+    font-family: "RANYBOLD", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.9rem;
+    margin-top: 35px;
+}
+
+.thrilling header span {
+    color: var(--orange-color);
+}
+
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about .content {
+    background-color: #f6f9ff;
+    padding: 40px;
+}
+
+.about h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #4154f1;
+    text-transform: uppercase;
+}
+
+.about h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #012970;
+}
+
+.about p {
+    margin: 15px 0 30px 0;
+    line-height: 24px;
+}
+
+.about .btn-read-more {
+    line-height: 0;
+    padding: 15px 40px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #fff;
+    background: #4154f1;
+    box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
+}
+
+.about .btn-read-more span {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.about .btn-read-more i {
+    margin-left: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.about .btn-read-more:hover i {
+    transform: translateX(5px);
+}
