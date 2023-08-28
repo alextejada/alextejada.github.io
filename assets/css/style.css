@@ -5,12 +5,13 @@
     scroll-behavior: smooth;
     --purple-color: #180b27;
     --purple-color2: #2a1943;
+    --purple-color3: #291943;
     --purple-color-transparent: #180b27c5;
     --orange-color: #ffb30b;
     --orange-color2: #fec002;
     --blue-color: #029cfe;
     --pink-color: #e65aff;
-    --headers-size: 2.5rem;
+    --headers-size: 3rem;
 }
 
 @font-face {
@@ -313,7 +314,7 @@ a {
 }
 
 /*--------------------------------------------------------------
-# Thrilling Section
+# sScial Section
 --------------------------------------------------------------*/
 .social {
     background: url(../img/panel2/Background_Salon_Izquierdo.png) top left no-repeat,
@@ -420,7 +421,7 @@ a {
     flex-direction: column;
 }
 
-.join .join-card-header{
+.join .join-card-header {
     text-transform: uppercase;
     font-family: "RANYBOLD", sans-serif;
     font-size: 1.5rem;
@@ -430,7 +431,7 @@ a {
     text-align: left;
 }
 
-.join .join-card-body{
+.join .join-card-body {
     flex: 1;
     line-height: 1;
     font-weight: bold;
@@ -438,7 +439,7 @@ a {
     text-align: left;
 }
 
-.join .join-card-element .sign-up-content{
+.join .join-card-element .sign-up-content {
     text-transform: uppercase;
     font-weight: bold;
     padding: 1rem;
@@ -446,7 +447,7 @@ a {
     text-align: left;
 }
 
-.join .join-banner{
+.join .join-banner {
     background: url(../img/panel3/Banner.png) top left no-repeat;
     background-size: initial;
     height: calc(calc(100vw / 1920) * 680);
@@ -457,14 +458,14 @@ a {
     align-content: center;
 }
 
-.join .join-button{
+.join .join-button {
     color: black;
     text-align: center;
     display: inline-block;
     margin: auto;
 }
 
-.join .join-button .button{
+.join .join-button .button {
     background: url(../img/sign-up.png) top left no-repeat;
     background-size: cover;
     width: 312px;
@@ -478,8 +479,117 @@ a {
     line-height: 1;
 }
 
-.join .join-button .button:hover{
+.join .join-button .button:hover {
     background: url(../img/sign-up-hover.png) top left no-repeat;
     background-size: cover;
     transition: all 0.5s ease;
+}
+
+/*--------------------------------------------------------------
+# Explanation Section
+--------------------------------------------------------------*/
+.explanation {
+    overflow-x: hidden;
+    margin: auto;
+    max-width: 1920px;
+    position: relative;
+}
+
+.explanation .container {
+    max-width: calc(calc(100vw / 1920) * 1200);
+
+}
+
+.explanation header {
+    font-family: "RANYBOLD", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--headers-size);
+    margin-top: 35px;
+}
+
+.explanation header span {
+    color: var(--orange-color);
+}
+
+.explanation .section-body {
+    font-weight: bold;
+    padding-top: 2rem;
+    margin-bottom: 4em;
+}
+
+.section-body .small-container {
+    width: 50%;
+    line-height: 1.25;
+    font-size: 1.15rem;
+    margin: 4rem auto 4rem;
+}
+
+.section-body .text-orange {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.section-body .big-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.section-body .big-container p {
+    margin-bottom: 2rem;
+    line-height: 1.25;
+    font-size: 1.15rem;
+}
+
+.section-body .big-container {
+    font-size: 3rem;
+}
+
+/*--------------------------------------------------------------
+# Footer Section
+--------------------------------------------------------------*/
+.footer {
+    background: var(--purple-color3);
+    background-size: initial;
+    overflow-x: hidden;
+    margin: auto;
+    max-width: 1920px;
+    position: relative;
+    padding-bottom: 3em;
+}
+
+.footer .container {
+    max-width: calc(calc(100vw / 1920) * 1800);
+}
+
+.footer .section-header {
+    width: fit-content;
+    margin: 3em auto 4em;;
+}
+
+.footer .link-Zone {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-weight: bold;
+}
+
+.footer .link-Zone a:hover {
+    color: var(--orange-color);
+    transition: all 0.5s ease;
+}
+
+.footer .final-zone {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-weight: bold;
+}
+
+.footer .final-zone div {
+    margin-bottom: 2em;
+}
+
+.footer .final-zone .final-copy {
+    text-transform: uppercase;
 }
