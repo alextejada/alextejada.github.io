@@ -647,8 +647,10 @@ a {
     max-height: 193px;
 }
 
-@keyframes beat{
-    to { transform: scale(1.05); }
+@keyframes beat {
+    to {
+        transform: scale(1.05);
+    }
 }
 
 /*--------------------------------------------------------------
@@ -662,7 +664,7 @@ a {
 }
 
 .explanation .container {
-    max-width: calc(calc(100vw / 1920) * 1200);
+    max-width: calc(calc(100vw / 1920) * 1700);
 
 }
 
@@ -694,11 +696,12 @@ a {
 .section-body .text-orange {
     font-size: 1.75rem;
     margin-bottom: 2rem;
+    text-transform: uppercase;
+    width: 90%;
 }
 
 .section-body .big-container {
     width: 90%;
-    margin: 0 auto;
 }
 
 .section-body .big-container p {
@@ -709,6 +712,30 @@ a {
 
 .section-body .big-container {
     font-size: 3rem;
+}
+
+.section-body .row {
+    position: relative;
+}
+
+.section-body .col-6 {
+    text-align: justify;
+}
+
+.section-body .divider {
+    height: 60%;
+    margin: auto;
+    position: absolute;
+    width: 1px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+}
+
+.move-r {
+    margin-left: auto;
 }
 
 /*--------------------------------------------------------------
