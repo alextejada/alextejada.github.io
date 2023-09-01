@@ -110,6 +110,7 @@ a {
 .navbar,
 .navRight {
     padding: 0;
+    font-family: "RANYBOLD", sans-serif;
 }
 
 .navRight {
@@ -138,18 +139,24 @@ a {
 .navRight li:hover {
     background: url(../img/hover-nav.png) center center no-repeat;
     background-size: cover;
-    transition: all 0.5s ease;
 }
 
 .navRight li.sign-up {
-    background: url(../img/sign-up.png) center center no-repeat;
-    background-size: cover;
+    background: url(../img/Boton-Sig-Up-Free_NORMAL.png) center center no-repeat;
+    background-size: contain;
+}
+
+.navRight li.sign-up > a {
+    color: black;
+}
+
+.navRight li.sign-up:hover > a {
+    color: white;
 }
 
 .navRight li.sign-up:hover {
-    background: url(../img/sign-up-hover.png) center center no-repeat;
-    background-size: cover;
-    transition: all 0.5s ease;
+    background: url(../img/Boton-Sig-Up-Free_AZUL.png) center center no-repeat;
+    background-size: contain;
 }
 
 .navbar a,
@@ -159,10 +166,13 @@ a {
     justify-content: space-between;
     padding: 10px 50px 10px 50px;
     font-size: 16px;
-    font-weight: 700;
     color: #ffffff;
     white-space: nowrap;
     transition: 0.3s;
+}
+
+.navRight .sign-up a {
+    padding: 7.5px 40px 7.5px 40px;
 }
 
 /**
@@ -292,8 +302,12 @@ a {
 }
 
 .hero .content .content-header{
-    font-size: 3rem;
+    font-size: 2.8rem;
     line-height: 1;
+    font-family: "RANYBOLD", sans-serif;
+    text-align: left;
+    width: 90%;
+    margin: auto;
 }
 
 .hero .content .content-slogan{
@@ -308,6 +322,7 @@ a {
 
 .content-slogan p.slogan-big{
     font-size: 8rem;
+    line-height: .9!important;
 }
 
 .content-slogan p.slogan-med{
@@ -321,14 +336,16 @@ a {
 .hero .account-button .button {
     background: url(../img/Boton-Crear-cuenta.png) top left no-repeat;
     background-size: cover;
-    width: 448px;
-    height: 83px;
+    width: calc(calc(100vw / 1920) * 448);
+    max-width: 448px;
+    height: calc(calc(100vw / 1920) * 83);
+    max-height: 83px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
     font-family: "RANYBOLD", sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 1;
     margin: auto;
 }
