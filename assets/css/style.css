@@ -283,25 +283,26 @@ a {
     top: 0;
 }
 
-.hero .character img{
+.hero .character img {
     width: calc(calc(100vw / 1920) * 1331);
     max-width: 1331px;
 }
 
-.hero .content{
+.hero .content {
     text-align: center;
     position: relative;
-    background: #271457;
+    background: #271457d9;
     width: calc(calc(100vw / 1920) * 581);
     max-width: 581px;
     border-radius: 25px;
     margin-left: auto;
     margin-right: 17rem;
+    margin-top: 3rem;
     text-transform: uppercase;
-    padding: 30px;
+    padding: 30px 30px 60px;
 }
 
-.hero .content .content-header{
+.hero .content .content-header {
     font-size: 2.8rem;
     line-height: 1;
     font-family: "RANYBOLD", sans-serif;
@@ -310,26 +311,26 @@ a {
     margin: auto;
 }
 
-.hero .content .content-slogan{
+.hero .content .content-slogan {
     margin-bottom: 2rem;
 }
 
-.hero .content .content-slogan p{
+.hero .content .content-slogan p {
     margin: 0;
     line-height: 1;
     color: #ffd200;
 }
 
-.content-slogan p.slogan-big{
+.content-slogan p.slogan-big {
     font-size: 8rem;
-    line-height: .9!important;
+    line-height: .9 !important;
 }
 
-.content-slogan p.slogan-med{
+.content-slogan p.slogan-med {
     font-size: 4.5rem;
 }
 
-.content-slogan p.slogan-sml{
+.content-slogan p.slogan-sml {
     font-size: 3rem;
 }
 
@@ -349,6 +350,43 @@ a {
     line-height: 1;
     margin: auto;
 }
+
+.hero .floating-coins {
+    position: absolute;
+    right: 8rem;
+    bottom: 10rem;
+}
+
+.hero .floating-coins img {
+    -webkit-animation: mover 3s infinite;
+    animation: mover 3s infinite;
+}
+
+
+@-webkit-keyframes mover {
+    0% {
+        -webkit-transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(-20px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 
 /*--------------------------------------------------------------
 # Index Page
@@ -486,7 +524,7 @@ a {
     margin-right: 3em;
 }
 
-.no-purchase-header{
+.no-purchase-header {
     color: var(--orange-color2);
     font-size: 4em;
     text-transform: uppercase;
@@ -494,7 +532,7 @@ a {
     font-family: "RANYBOLD", sans-serif;
 }
 
-.no-purchase-desc{
+.no-purchase-desc {
     font-size: 1.5em;
     line-height: 1;
     font-family: "RANYBOLD", sans-serif;
@@ -502,14 +540,14 @@ a {
     margin: auto;
 }
 
-.social .join-button{
+.social .join-button {
     margin: 4em auto;
     width: fit-content;
     display: block;
 
 }
 
-.social .join-button .button{
+.social .join-button .button {
     margin: auto;
 }
 
@@ -582,10 +620,12 @@ a {
 
 .social .join-button .button,
 .join .join-button .button {
-    background: url(../img/sign-up.png) top left no-repeat;
+    background: url(../img/panel3/Boton_Amarillo_Normal.png) top left no-repeat;
     background-size: cover;
-    width: 312px;
-    height: 117px;
+    max-width: calc(calc(100vw / 1920) * 393);;
+    width: 393px;
+    height: calc(calc(100vw / 1920) * 193);;
+    max-height: 193px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -594,13 +634,21 @@ a {
     font-size: 1.5rem;
     line-height: 1;
     color: black;
+    animation: beat 1s infinite alternate;
 }
 
 .social .join-button .button:hover,
 .join .join-button .button:hover {
-    background: url(../img/sign-up-hover.png) top left no-repeat;
+    background: url(../img/panel3/Boton_Amarillo_Resplandor.png) top left no-repeat;
     background-size: cover;
-    transition: all 0.5s ease;
+    max-width: calc(calc(100vw / 1920) * 393);;
+    width: 393px;
+    height: calc(calc(100vw / 1920) * 193);;
+    max-height: 193px;
+}
+
+@keyframes beat{
+    to { transform: scale(1.05); }
 }
 
 /*--------------------------------------------------------------
@@ -712,62 +760,62 @@ a {
     text-transform: uppercase;
 }
 
-.footer .icon-links{
+.footer .icon-links {
     width: 30%;
     margin: 2.5em auto;
 }
 
-.link-facebook{
+.link-facebook {
     background: url('../img/Facebook_01.png');
     width: 18px;
     height: 18px;
 }
 
-.link-facebook:hover{
+.link-facebook:hover {
     background: url('../img/Facebook_02.png');
     transition: all 0.5s ease;
 }
 
-.link-instagram{
+.link-instagram {
     background: url('../img/Instagram_01.png');
     width: 18px;
     height: 18px;
 }
 
-.link-instagram:hover{
+.link-instagram:hover {
     background: url('../img/Instagram_02.png');
     transition: all 0.5s ease;
 }
 
-.link-twitter{
+.link-twitter {
     background: url('../img/twitter_01.png');
     width: 18px;
     height: 18px;
 }
 
-.link-twitter:hover{
+.link-twitter:hover {
     background: url('../img/twitter_02.png');
     transition: all 0.5s ease;
 }
 
-.link-youtube{
+.link-youtube {
     background: url('../img/youtube_01.png');
     width: 18px;
     height: 18px;
 }
 
-.link-youtube:hover{
+.link-youtube:hover {
     background: url('../img/youtube_02.png');
     transition: all 0.5s ease;
 }
 
-.link-t{
+.link-t {
     background: url('../img/T_01.png');
     width: 18px;
     height: 18px;
 }
 
-.link-t:hover{
+.link-t:hover {
     background: url('../img/T_02.png');
     transition: all 0.5s ease;
 }
