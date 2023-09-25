@@ -1,0 +1,855 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+    font-family: "IMPACT", sans-serif;
+    background: url('../img/GAME PAGE/FONDO.png') top center no-repeat;
+    background-size: initial;
+    overflow: hidden;
+    height: calc(calc(100vw / 1920) * 825);
+    max-height: 825px;
+    margin: auto;
+    max-width: 1920px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.hero .separator {
+    position: absolute;
+    bottom: 0;
+    background: url('data:image/png;base64,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') top center no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 1920px;
+    height: calc(calc(100vw / 1920) * 8);
+    max-height: 8px;
+}
+
+.hero img.main-img {
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    width: calc(calc(100vw / 1920) * 1106);
+    height: calc(calc(100vw / 1920) * 825);
+}
+
+.hero .content {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.hero .big-text {
+    font-size: calc(calc(100vw / 1920) * 137);
+    line-height: 1;
+}
+
+.hero .medium-text {
+    font-size: calc(calc(100vw / 1920) * 64);
+    line-height: 1;
+}
+
+.hero .small-text {
+    font-size: calc(calc(100vw / 1920) * 40);
+    line-height: 1;
+    font-family: "RANYBOLD", sans-serif;
+}
+
+.hero .dummy {
+    position: absolute;
+    z-index: 2;
+    width: calc(calc(100vw / 1920) * 130);
+    height: calc(calc(100vw / 1920) * 130);
+}
+
+.hero .content a:hover {
+    color: var(--orange-color2);
+}
+
+@media (min-width: 1920px) {
+    .hero img.main-img {
+        width: 1106px;
+        height: 825px;
+    }
+
+    .hero .big-text {
+        font-size: 137px;
+    }
+
+    .hero .medium-text {
+        font-size: 64px;
+    }
+
+    .hero .small-text {
+        font-size: 40px;
+    }
+
+    .hero .dummy {
+        width: 130px;
+        height: 130px;
+        left: 56px;
+        top: 152px;
+    }
+}
+
+@media (max-width: 1920px) {
+    .hero .dummy {
+        left: calc(calc(100vw / 1920) * 56);
+        top: calc(calc(100vw / 1920) * 152);
+    }
+}
+
+@media (max-width: 1000px) {
+    .hero {
+        padding-top: 50px;
+    }
+
+    .hero .dummy {
+        top: calc(calc(100vw / 1920) * 200);
+    }
+}
+
+@media (max-width: 850px) {
+    .hero .dummy {
+        top: calc(calc(100vw / 1920) * 210);
+    }
+}
+
+/*--------------------------------------------------------------
+# Index Page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Thrilling Section
+--------------------------------------------------------------*/
+.thrilling {
+    background: url(../img/panel1/Background_Juegos_Derecho.png) top left no-repeat,
+    url(../img/panel1/Background_Juegos_Izquierdo.png) top right no-repeat,
+    url(../img/panel1/Resplandor.png) bottom center no-repeat;
+    background-size: initial;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: auto;
+    max-width: 1920px;
+    position: relative;
+}
+
+.thrilling .container {
+    max-width: calc(calc(100vw / 1920) * 1800);
+}
+
+.thrilling header {
+    font-family: "RANYBOLD", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--headers-size);
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+.thrilling header .sub-header {
+    text-transform: initial;
+    font-size: 1.5rem;
+    font-family: "Candara", sans-serif;
+    width: 50%;
+    margin: auto;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.thrilling .col-xl-10 {
+    margin: auto;
+}
+
+@media (min-width: 2000px) {
+    .thrilling .col-xl-10 {
+        width: 70%;
+    }
+}
+
+.thrilling header span {
+    color: var(--orange-color);
+}
+
+#portfolio-filters {
+    margin: 0 auto 25px auto;
+    list-style: none;
+    text-align: center;
+    border-radius: 50px;
+    padding: 2px 15px;
+    text-transform: uppercase;
+}
+
+#portfolio-filters li {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding: 8px 20px 10px 20px;
+    font-size: 15px;
+    line-height: 1;
+    margin: 0 4px 25px 4px;
+    transition: 0.3s;
+    background: url(../img/panel1/Boton-Evento_LILA.png) center center no-repeat;
+    background-size: contain;
+    width: calc(calc(100vw / 1920) * 289);
+    max-width: 289px;
+    height: calc(calc(100vw / 1920) * 77);
+    max-height: 77px;
+    font-family: "RANYBOLD", sans-serif;
+}
+
+#portfolio-filters li:hover,
+#portfolio-filters li.filter-active {
+    transition: 0.3s;
+    background: url(../img/panel1/Boton-Evento_Amarillo.png) center center no-repeat;
+    background-size: contain;
+    color: black;
+}
+
+#portfolio-filters li a,
+#portfolio-filters li p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    font-size: 1.25rem;
+}
+
+.portfolio-container {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    padding-bottom: 3em;
+}
+
+.portfolio-container .portfolio-wrap {
+    text-align: center;
+    width: fit-content;
+}
+
+
+.portfolio-wrap a > img {
+    border-radius: 30px;
+    transition: 0.25s all ease-in-out;
+}
+
+.portfolio-wrap a:hover > img {
+    transform: scale(1.1);
+}
+
+.thrilling .more {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "RANYBOLD", sans-serif;
+    margin-bottom: 3em;
+}
+
+.thrilling .more a {
+    background: url(../img/panel1/Boton-Evento_LILA.png) center center no-repeat;
+    background-size: contain;
+    width: calc(calc(100vw / 1920) * 289);
+    max-width: 289px;
+    height: calc(calc(100vw / 1920) * 77);
+    max-height: 77px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+.thrilling .more a:hover {
+    background: url(../img/panel1/Boton-Evento_Amarillo.png) center center no-repeat;
+    background-size: contain;
+    color: black;
+}
+
+.thrilling .more a span {
+    margin: auto;
+}
+
+@media (max-width: 1600px) {
+    .thrilling header {
+        margin-bottom: 4rem;
+    }
+
+    .portfolio-container {
+        width: 60%;
+    }
+
+    .thrilling .more a {
+        font-size: 1.25rem;
+    }
+
+    .thrilling header .sub-header {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .thrilling header {
+        margin-bottom: 4rem;
+    }
+
+    .portfolio-container {
+        width: 70%;
+    }
+
+    .thrilling .more a {
+        font-size: 1rem;
+    }
+
+    .thrilling header .sub-header {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1200px) {
+    #portfolio-filters li a,
+    #portfolio-filters li p {
+        font-size: 1rem;
+    }
+
+    #portfolio-filters {
+        margin: 0 auto 15px auto;
+    }
+
+    .thrilling .more a {
+        font-size: 1rem;
+    }
+
+    .thrilling header .sub-header {
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 901px) {
+    .thrilling header {
+        margin-bottom: 3rem;
+    }
+
+    #portfolio-filters li a,
+    #portfolio-filters li p {
+        font-size: .8rem;
+    }
+
+    #portfolio-filters {
+        margin: 0 auto;
+    }
+
+    .portfolio-container {
+        width: 75%;
+    }
+
+    .thrilling .more a {
+        font-size: .8rem;
+    }
+
+    .thrilling header .sub-header {
+        font-size: 1rem;
+    }
+}
+
+/*--------------------------------------------------------------
+# Explanation Section
+--------------------------------------------------------------*/
+.explanation {
+    overflow: hidden;
+    margin: auto;
+    max-width: 1920px;
+    position: relative;
+    background: url(../img/panel2/Background_Salon_Izquierdo.png) top left no-repeat,
+    url(../img/panel2/Background_Salon_Derecho.png) top right no-repeat,
+    url(../img/panel1/Resplandor.png) bottom center no-repeat;
+}
+
+.explanation .container {
+    max-width: calc(calc(100vw / 1920) * 1700);
+
+}
+
+.explanation header {
+    font-family: "RANYBOLD", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--headers-size);
+    margin-top: 35px;
+    line-height: 1.1;
+}
+
+.explanation header span {
+    color: var(--orange-color);
+}
+
+.explanation .section-body {
+    font-weight: bold;
+    padding-top: 4rem;
+}
+
+.section-body .small-container {
+    width: 50%;
+    line-height: 1.25;
+    font-size: 1.5rem;
+    margin: 2rem auto 4rem;
+}
+
+.section-body .text-orange {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    width: 90%;
+    font-family: "RANYBOLD", sans-serif;
+    font-weight: initial;
+}
+
+.section-body .big-container {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.section-body .big-container p {
+    margin-bottom: 2rem;
+    line-height: 1.25;
+    font-size: 1.15rem;
+}
+
+.section-body .big-container {
+    font-size: 3rem;
+}
+
+.section-body .row {
+    position: relative;
+}
+
+.section-body .col-6 {
+    text-align: left;
+}
+
+.section-body .divider {
+    height: 95%;
+    margin: auto;
+    position: absolute;
+    width: 1px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+}
+
+.move-r {
+    margin-left: auto;
+}
+
+.join-cards-holder {
+    margin-bottom: 3rem;
+}
+
+.join-card-element {
+    text-align: center;
+}
+
+.join-card-element .join-card-header {
+    text-transform: uppercase;
+    font-family: "RANYBOLD", sans-serif;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.join-card-element .join-card-body {
+    text-align: left;
+    line-height: 1;
+    width: 80%;
+    margin: auto;
+    font-weight: bold;
+}
+
+@media (max-width: 1500px) {
+    .section-body .small-container {
+        font-size: 1.15rem;
+        margin: 0 auto 4rem;
+    }
+
+    .section-body .text-orange {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 1400px) {
+    .join-card-element .join-card-icon {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    .explanation .section-body {
+        padding-top: 1rem;
+    }
+
+    .section-body .small-container {
+        font-size: 1rem;
+        margin: 0 auto 4rem;
+        width: 60%;
+    }
+
+    .section-body .text-orange {
+        font-size: 1.35rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .section-body .big-container p {
+        font-size: 1rem;
+    }
+
+    .join-card-element .join-card-icon {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .section-body .small-container {
+        width: 70%;
+        margin: 0 auto 3rem;
+    }
+
+    .section-body .text-orange {
+        font-size: 1.05rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .join-card-header.text-orange {
+        font-size: 1.05rem;
+    }
+
+    .join-card-element .join-card-body {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .section-body .text-orange {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/*--------------------------------------------------------------
+# Favorite Section
+--------------------------------------------------------------*/
+.favorite {
+    overflow: hidden;
+    margin: auto;
+    max-width: 1920px;
+    position: relative;
+    background: url(../img/panel1/Resplandor.png) bottom center no-repeat;
+}
+
+.favorite .container {
+    width: calc(calc(100vw / 1920) * 1500);
+    max-width: 100%;
+    position: relative;
+}
+
+.favorite header {
+    font-family: "RANYBOLD", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--headers-size);
+    margin-top: 35px;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+.favorite header span {
+    color: var(--orange-color);
+}
+
+.favorite .section-body {
+    font-weight: bold;
+    text-align: right;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.favorite .section-body .description {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 35%;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    margin-top: 6rem;
+    margin-left: 17rem;
+}
+
+@media (min-width: 1920px) {
+    .favorite .section-body .description {
+        right: 40%;
+    }
+}
+
+@media (max-width: 1600px) {
+    .favorite .section-body img {
+        max-width: 60%;
+    }
+
+    .favorite .section-body .description {
+        margin-left: 12rem;
+    }
+}
+
+@media (max-width: 1400px) {
+    .favorite .section-body img {
+        max-width: 50%;
+    }
+
+    .favorite .section-body .description {
+        font-size: 1.05rem;
+        width: 40%;
+        margin-left: 10rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .favorite .section-body .description {
+        font-size: 1rem;
+        width: 45%;
+        margin-left: 8rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .favorite .section-body .description {
+        font-size: .8rem;
+        width: 50%;
+        margin-left: 4rem;
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .favorite .section-body .description {
+        font-size: .8rem;
+        width: 60%;
+        margin-left: 0;
+        margin-top: 4rem;
+    }
+}
+
+/*--------------------------------------------------------------
+# Choose Section
+--------------------------------------------------------------*/
+.choose {
+    overflow: hidden;
+    margin: auto auto 4rem;
+    max-width: 1920px;
+    position: relative;
+}
+
+.choose .container {
+    width: calc(calc(100vw / 1920) * 1400);
+    max-width: 100%;
+    position: relative;
+}
+
+.choose header {
+    font-family: "RANYBOLD", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--headers-size);
+    margin-top: 35px;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+.choose header#header2 {
+    margin: 2em auto;
+}
+
+.choose header span {
+    color: var(--orange-color);
+}
+
+.choose .section-body {
+    font-weight: bold;
+}
+
+.choose .section-body .body-header {
+    text-align: center;
+    width: 70%;
+    margin: 5rem auto 2rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.choose .section-body .row.design {
+    margin-bottom: 3rem;
+    width: 70%;
+}
+
+.choose .section-body .row.design .col-6 {
+    text-align: center;
+}
+
+.double-column-list {
+    column-count: 2;
+    column-gap: 140px;
+    width: fit-content;
+    margin: auto;
+    left: 70px;
+    position: relative;
+}
+
+.double-column-list li {
+    margin-bottom: 5px; /* Add some space between list items */
+}
+
+.double-column-list li::marker {
+    color: var(--orange-color);; /* Change the color of the list item markers */
+}
+
+.choose .section-body .row {
+    margin: auto;
+}
+
+.choose .section-body .text-orange {
+    font-size: 1.25rem;
+}
+
+.choose .section-body .element-body {
+    width: 90%;
+    text-align: left;
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+.choose .section-body .element-signup a:hover {
+    color: var(--orange-color);
+}
+
+.choose .element {
+    display: flex;
+    flex-direction: column;
+}
+
+.choose .more{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.choose .more a{
+    background: url(../img/panel1/Boton-Evento_LILA.png) center center no-repeat;
+    background-size: contain;
+    width: calc(calc(100vw / 1920) * 289);
+    max-width: 289px;
+    height: calc(calc(100vw / 1920) * 77);
+    max-height: 77px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+.choose .more a:hover{
+    background: url(../img/panel1/Boton-Evento_Amarillo.png) center center no-repeat;
+    background-size: contain;
+    color: black;
+}
+
+.choose .more a span {
+    margin: auto;
+}
+
+
+
+
+@media (max-width: 1600px) {
+    .choose .more a {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 1400px) {
+    .choose .section-body .row.design {
+        width: 80%;
+    }
+
+    .choose .more a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .choose .section-body p {
+        width: 90%;
+        margin: 4rem auto;
+        line-height: 1.1;
+    }
+
+    .choose .section-body .element-body {
+        line-height: 1.1;
+    }
+
+    .choose header {
+        font-size: 1.95rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .choose .section-body p {
+        line-height: 1;
+    }
+
+    .choose .section-body .row.design,
+    .choose .section-body .element-body {
+        line-height: 1;
+    }
+
+    .choose .container {
+        width: calc(calc(100vw / 1920) * 1600);
+    }
+
+    .choose .section-body .row.design {
+        width: 90%;
+    }
+
+    .choose .more a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .choose .section-body .row.design,
+    .choose .section-body .element-body {
+        font-size: .9rem;
+    }
+
+    .choose .container {
+        width: calc(calc(100vw / 1920) * 1700);
+    }
+}
+
+@media (max-width: 901px) {
+    .choose .more a {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .choose header {
+        font-size: 1.5rem;
+    }
+
+    .choose .section-body .text-orange {
+        font-size: 1.1rem;
+    }
+
+    .choose .section-body .row.design {
+        width: 100%;
+    }
+}

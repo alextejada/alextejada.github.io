@@ -1,0 +1,137 @@
+.terms{
+    font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero-pages {
+    font-family: "IMPACT", sans-serif;
+    overflow: hidden;
+    margin: auto;
+    max-width: 1920px;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.hero-pages .character {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    background: url(../img/Terms/FONDO_BANNER.png) center bottom no-repeat;
+    width: 100%;
+    text-align: center;
+    height: calc(calc(100vw / 1920) * 681);
+    max-height: 681px;
+    background-size: cover;
+}
+
+@media (max-width: 1600px) {
+    .hero-pages .character {
+        height: calc(calc(100vw / 1920) * 700);
+    }
+}
+
+@media (max-width: 1400px) {
+    .hero-pages .character {
+        height: calc(calc(100vw / 1920) * 715);
+    }
+}
+
+@media (max-width: 1300px) {
+    .hero-pages .character {
+        height: calc(calc(100vw / 1920) * 725);
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero-pages .character {
+        height: calc(calc(100vw / 1920) * 735);
+    }
+}
+
+@media (max-width: 1100px) {
+    .hero-pages .character {
+        height: calc(calc(100vw / 1920) * 750);
+    }
+}
+
+@media (max-width: 1001px) {
+    .hero-pages .character {
+        height: calc(calc(100vw / 1920) * 765);
+    }
+}
+
+@media (max-width: 901px) {
+    .hero-pages .character {
+        height: calc(calc(100vw / 1920) * 782.5);
+    }
+}
+
+@media (max-width: 801px) {
+    .hero-pages .character {
+        height: calc(calc(100vw / 1920) * 820);
+    }
+}
+
+.hero-pages .character img {
+    position: relative;
+    margin: 0 auto;
+    height: calc(calc(100vw / 1920) * 584);
+    max-height: 584px;
+    bottom: -97px;
+}
+
+.hero-pages .text {
+    position: relative;
+    height: calc(calc(100vw / 1920) * 81);
+    max-height: 81px;
+    font-family: "RANYBOLD", sans-serif;
+}
+
+.hero-pages .text h1 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media (max-width: 1400px) {
+    .main .container {
+        width: 60%;
+    }
+}
+
+/*--------------------------------------------------------------
+# Main Section
+--------------------------------------------------------------*/
+.main .container {
+    width: 40%;
+    padding: 3em 0 4em;
+}
+
+@media (max-width: 1300px) {
+    .main .container {
+        width: 60%;
+    }
+}
+
+.main .section-header {
+    font-size: 1.75rem;
+    font-family: "RANYBOLD", sans-serif;
+    margin: 1em 0 .5em;
+}
+
+.main .container .row p {
+    font-size: 1.05rem;
+    line-height: 1;
+    text-align: justify;
+}
+
+.main .container.spaced .row p {
+    margin: 3em 0 2em;
+}
