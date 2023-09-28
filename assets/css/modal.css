@@ -148,32 +148,9 @@
     margin: 1em auto 0;
 }
 
-.social-login2 .social-login{
+.social-login2 .social-login {
     margin: 1em auto 0;
     padding: 0;
-}
-
-@media (max-width: 1400px) {
-    .modal-dialog {
-        width: calc(calc(100vw / 1920) * 792);
-        margin: 4rem auto 2em;
-    }
-}
-
-
-@media (max-width: 1000px) {
-    .modal-dialog {
-        width: calc(calc(100vw / 1920) * 1200);
-        margin: 6rem auto 2em;
-    }
-
-    .social-login2 .social-login {
-        margin: 2.5rem auto 0;
-    }
-
-    .social-login2{
-        padding-bottom: 1.5rem;
-    }
 }
 
 .form-holder .btn-social-large,
@@ -192,7 +169,7 @@
     background-size: cover;
 }
 
-.form-holder .btn-social-large{
+.form-holder .btn-social-large {
     background: url("../img/user/Boton_Largo_01.png") center center no-repeat;
     width: 100%;
     background-size: contain;
@@ -235,7 +212,7 @@
     margin-right: auto;
 }
 
-.form-holder .divider-login p{
+.form-holder .divider-login p {
     background-color: #341959;
 }
 
@@ -365,4 +342,111 @@
     opacity: .9 !important; /* Change this to your desired opacity level */
 }
 
+@media (max-width: 1400px) {
+    .modal-dialog {
+        width: calc(calc(100vw / 1920) * 792);
+        margin: 4rem auto 2em;
+    }
+}
 
+
+@media (max-width: 1000px) {
+    .modal-dialog {
+        width: calc(calc(100vw / 1920) * 1200);
+        margin: 6rem auto 2em;
+    }
+
+    .social-login2 .social-login {
+        margin: 2.5rem auto 0;
+    }
+
+    .social-login2 {
+        padding-bottom: 1.5rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .btn-close {
+        display: none;
+    }
+
+    .logo {
+        position: relative;
+        top: 2rem;
+        text-align: center;
+        width: 100%;
+        display: block;
+        left: 0;
+    }
+
+    .modal-dialog {
+        width: calc(calc(100vw / 768) * 768);
+    }
+
+    .slider-arrow.next {
+        right: -3em;
+    }
+
+    .slider-arrow.prev {
+        left: -3em;
+    }
+}
+
+@media (max-width: 700px) {
+    .slider-arrow.next {
+        right: -1.5em;
+    }
+
+    .slider-arrow.prev {
+        left: -1.5em;
+    }
+}
+
+@media (max-width: 650px) {
+    .slider-arrow {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .form-holder form .legal,
+    .form-holder form .pass-clarification {
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .col-6{
+        width: 100%;
+    }
+
+    .form-holder .place-r{
+        right: inherit;
+    }
+
+    .form-holder .social-login{
+        margin: 1.5rem 0;
+        left: 15%;
+    }
+
+    .form-holder {
+        margin: 0 auto auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .modal-body {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 6%, rgba(41, 25, 67, 1) 6%, rgba(41, 25, 67, 1) 60%, rgba(65, 24, 114, 1) 100%);
+    }
+}
+
+@media (max-width: 350px) {
+    .logo .img-fluid {
+        width: 60%;
+    }
+
+    .form-holder .social-login{
+        left: 7%;
+    }
+}

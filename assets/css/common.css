@@ -374,8 +374,14 @@ br.mobile-break {
     }
 }
 
-@media (min-width: 781px) {
+@media (min-width: 780px) {
     .normal-hidden {
+        display: none;
+    }
+}
+
+@media (max-width: 780px) {
+    .mobile-hidden {
         display: none;
     }
 }
@@ -392,10 +398,6 @@ br.mobile-break {
 
     .header .logo img {
         max-height: fit-content;
-    }
-
-    .mobile-hidden {
-        display: none;
     }
 
     .mobile-nav-toggle {

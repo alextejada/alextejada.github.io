@@ -132,3 +132,38 @@
     }
 }
 
+@media (max-width: 780px) {
+    .hero .content {
+        margin: calc(calc(100vw / 780) * 100) auto 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero {
+        height: calc(calc(100vw / 1200) * 850);
+    }
+
+    .hero .content {
+        margin: calc(calc(100vw / 780) * 150) auto 0;
+    }
+
+    .hero li a {
+        width: calc(calc(100vw / 1200) * 289);
+        height: calc(calc(100vw / 1200) * 77);
+    }
+}
+
+
+@media (max-width: 500px) {
+    .hero {
+        height: calc(calc(100vw / 1200) * 1050);
+    }
+
+    .hero img.main-img {
+        width: calc(calc(100vw / 1200) * 549);
+    }
+
+    .hero li a {
+        font-size: .65rem;
+    }
+}

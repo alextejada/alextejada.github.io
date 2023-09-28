@@ -22,7 +22,6 @@
                $(this).removeClass('col-sm-4');
                $(this).addClass('col');
            });
-            console.log(elements);
         } else {
             // If the screen width is greater than 768px, you can add the class back if needed
             //element.classList.add("example-class");
@@ -98,7 +97,6 @@
         // return document.cookie.split(';').some(function (cookie) {
         //     return cookie.trim().startsWith('modalShown2=');
         // });
-        return false;
         return sessionStorage.getItem('modalShown');
     }
 
@@ -108,7 +106,7 @@
             //document.cookie = 'modalShown2=true; path=/';
             //localStorage.setItem('modalShown', 'true');
             sessionStorage.setItem('modalShown', 'true');
-        }, 100);
+        }, 10000);
     }
 
     /**
@@ -370,5 +368,4 @@
     scrollableArea.addEventListener('mouseleave', () => {
         isDragging = false;
     });*/
-
 })();
