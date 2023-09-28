@@ -129,9 +129,138 @@
 .main .container .row p {
     font-size: 1.05rem;
     line-height: 1;
-    text-align: justify;
 }
 
 .main .container.spaced .row p {
     margin: 3em 0 2em;
+}
+
+@media (max-width: 768px) {
+    .hero-pages .character img {
+        height: calc(calc(100vw / 1920) * 504);
+        bottom: -119px;
+    }
+
+    .main .container {
+        width: 90%;
+        padding: 3em 0 2em;
+    }
+
+    .hero-pages .text h1 {
+        font-size: calc(1.25rem + 1vw);
+    }
+
+    .main .section-header {
+        font-size: 1.25rem;
+        margin: 1.5em 0 .5em;
+    }
+
+    .fs-4 {
+        font-size: calc(1.25rem + .3vw) !important;
+    }
+
+    .main .container .row p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero-pages .character img {
+        height: calc(calc(100vw / 1920) * 450);
+        bottom: -136px;
+    }
+
+    .hero-pages .text h1 {
+        font-size: calc(1rem + 1vw);
+    }
+}
+
+@media (max-width: 650px) {
+    .hero-pages .character img {
+        height: calc(calc(100vw / 1920) * 450);
+        bottom: -125px;
+    }
+
+    .main .container {
+        padding: 1em 0;
+    }
+
+    .hero-pages .text h1 {
+        font-size: calc(.9rem + 1vw);
+    }
+
+    .hero-pages .text img {
+        height: 500%;
+    }
+
+    .main .section-header {
+        font-size: 1.05rem;
+        margin: 1.25em 0 .5em;
+    }
+
+    .fs-4 {
+        font-size: calc(1.05rem + .3vw) !important;
+    }
+
+    .main .container .row p {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 620px) {
+    .hero-pages .character img {
+        bottom: calc(calc(100vw / 620) * -120)
+    }
+}
+
+@media (max-width: 550px) {
+    .main .container {
+        padding: .5rem 0;
+    }
+
+    .hero-pages .text h1 {
+        font-size: calc(.65rem + 1vw);
+    }
+
+    .main .section-header {
+        font-size: .9rem;
+        margin: 1.25em 0 .5em;
+    }
+
+    .fs-4 {
+        font-size: calc(.7rem + .3vw) !important;
+    }
+
+    .main .container .row p {
+        font-size: .6rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .main .container {
+        padding: .5rem 0;
+    }
+}
+
+@media (max-width: 350px) {
+    .main .container {
+        padding: .25rem 0;
+    }
+
+    .hero-pages .text h1 {
+        font-size: calc(.45rem + 1vw);
+    }
+
+    .main .section-header {
+        font-size: .7rem;
+        margin: 1.25em 0 .5em;
+    }
+
+    .fs-4 {
+        font-size: calc(.65rem + .3vw) !important;
+    }
+
+    .main .container .row p {
+        font-size: .5rem;
+    }
 }

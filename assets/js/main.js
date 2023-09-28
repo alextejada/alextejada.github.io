@@ -98,6 +98,7 @@
         // return document.cookie.split(';').some(function (cookie) {
         //     return cookie.trim().startsWith('modalShown2=');
         // });
+        return false;
         return sessionStorage.getItem('modalShown');
     }
 
@@ -107,7 +108,7 @@
             //document.cookie = 'modalShown2=true; path=/';
             //localStorage.setItem('modalShown', 'true');
             sessionStorage.setItem('modalShown', 'true');
-        }, 10000);
+        }, 100);
     }
 
     /**
@@ -300,6 +301,10 @@
             }, true);
         }
 
+    });
+
+    $(window).on('resize', function () {
+        $('.portfolio').isotope('layout');
     });
 
     /**
